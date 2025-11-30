@@ -5,7 +5,7 @@
 ## 🏆 Why This Wins
 
 1. **AWS AI Integration** - Amazon Bedrock for personalized health insights
-2. **Unique Cat Voice** - Librosa pitch shifting makes health fun
+2. **Unique Cat Voice** - Google Cloud Text-to-Speech for fun and realistic cat sounds
 3. **Real Competition** - Group leaderboards with real-time sync
 4. **Complete Solution** - Withings API, Firebase, notifications, chat
 
@@ -83,7 +83,8 @@
        │
        ├─────► Withings API (Health Data)
        │
-       └─────► Librosa (Cat Voice)
+       └─────►Google Cloud Text-to-Speech for fun and realistic cat sounds
+
 ```
 
 ## 📊 Impact
