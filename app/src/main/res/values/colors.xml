@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="text_primary">#1F2937</color>      <!-- koyu -->
+    <color name="text_secondary">#6B7280</color>    <!-- gri -->
+    <color name="acc_mint">#3DD6B8</color>          <!-- açık mint -->
+    <color name="acc_lavender">#C5B4FF</color>
+    <color name="acc_soft_pink">#FFD6E0</color>
+    <color name="grad_start">#E6FFF7</color>
+    <color name="grad_mid">#DCEAFE</color>
+    <color name="grad_end">#FDEFF9</color>
+    
+    <!-- Health App Green Theme -->
+    <color name="primary_green">#4CAF50</color>
+    <color name="dark_green">#2E7D32</color>
+    <color name="light_green">#81C784</color>
+    <color name="light_green_bg">#F1F8E9</color>
+    <color name="card_green">#E8F5E8</color>
+    
+    <!-- Blade Runner Futuristic Theme -->
+    <color name="neon_pink">#FF0080</color>
+    <color name="cyber_purple">#8A2BE2</color>
+    <color name="electric_blue">#00FFFF</color>
+    <color name="dark_purple">#4B0082</color>
+    <color name="neon_magenta">#FF1493</color>
+    <color name="cyber_violet">#9932CC</color>
+    
+    <!-- Missing theme colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

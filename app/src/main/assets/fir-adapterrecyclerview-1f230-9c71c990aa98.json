@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "fir-adapterrecyclerview-1f230",
+  "private_key_id": "9c71c990aa984f4307721b65d5857985ad65c506",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCPf1uJ2arHUe+l\nRHQiqCYSWZjTtotC/y/+Mwy6pESNAP0bEj+QGB5mKTJfrJhE1P+exaEqaFUq2kRV\nBBuyDFi4NyHrpCq/9/5V7N+1TWjeBxZm0ZAqSfzqSlSGtJIr7aCcjgBQoN2qwHWF\nycAFtCD8MH4ykpH7jP8ESKJnSyViSqfXlBemwUsmwowBDOTcHgIzB5CiU684FJql\nuYf02QsyZP7M8hfZxbbirF3cclb1v77YJcQ4DBFug9s5hO8/zYfHRzZNGyIzrsVf\nzgCVptE/MTMcW3FLw4NLTpeuYHQn1dqhGGs34fpPXm7kRKWimTVJEjkIn8l6SUS+\nciIHhjQNAgMBAAECggEAAYGsvTAnAZMLCRyoCe1UyXBr7YA1St2cAYx84XJQnUN5\nq+mWokAmkuMBgVQyDp2cTvrQhqGCV2WOdxnPxi59x71WqcZI9bnGiGr3LTAOs2hE\n3TfRB0UTszABl0mR7Np5i0JXgtaHTT/olNkPAqduNBzxjj1eejaQd4PhQtZAaYDr\nO+LMnyZp++DdtJplp2COzED330yOO7tIPw9z5//GAHMuLjS/ANsYSxPZNG3ptSTP\nv0XYZruaeHl3CrF0iaYV8leHPOytAtk3DX3GlK9yYjX4mPTROJ1Q+dX7PoEszfkT\nU8lbKxRCcFkB/YMdoHwen/z9SjHffAuef4/YhTwi4QKBgQDGNyMMgqA/xuMqDFXH\nTZIRrx2NV3BtV209K/AuBX+ifL9T/0zomngU2MQivpxXxsp5CgAV8mqPXpyi/sMV\nojuJoRtQ//8LTYsAL+9G38deMVQswXiHzPWkWgLQhxmwNdmsI2CEvbhMHSAAQZgv\n/QcjOB4KpSjMDStzGmv4tH9mEQKBgQC5VJxtZ7+jW1by8qwQjn0TFXpORGH+p5ks\nRvzk+vtRbz0hiJ0Q4t79+jpPegW8O3ojxX5KfRudHG6/dPctBbO2Lo1d/b9oXyl9\nxwhj7E7LbCcYaAssbha4YJ7nfJy92sFN+1MhHzMZbz2f0rE+oG9y0xDu7LIKNckD\nfed/YrLCPQKBgDhy62BcsxZ2pasL6EHiLX8rx9bA2BvLkiihorz4g+jabgKV6mkz\n1I7bTMA4WH4G9xKRboTRjNdXsnQY6aX3lc0UPJtMzG2Dn9plzFb60+RXWAmG77R9\nAlfT6olIcGBmdZ84U/x5q0rB4KMyCw1fmfDFwoh1kLDL71vQYn9pp/6BAoGAESsE\nXqIov4I7mL/gLpx0e6sWrF9rUILIDrD4xmF1nIKYgB2+pwzNKWvfsPMVyu0bkGrA\nGzhhsXkrzTKRnysTDcJcOCPEcm+2UT95yH/ggLmhGYKx3kjIdAYHUlxZzMCR/Z5V\nghD409dZNw/2eV21VUa2H9vvVkDLQTaNlmBXPOUCgYEArvuiFDwSOZ+X6UktalrY\nUgJO4kJNDhXp9X3RhDicWyuclRF5LK+Ujb3Xv/DgX4vq0iFvVIDE4vXSYi2p99zb\nzfhA1HIkERgiYMzwS0rj7F8Tt2uaGsBP0CkY2xeSRO/vTSOqatZs9X18DE918dLI\nYiCNdV1kzhzcwChrJSzz+0k=\n-----END PRIVATE KEY-----\n",
+  "client_email": "pollyfuckyou@fir-adapterrecyclerview-1f230.iam.gserviceaccount.com",
+  "client_id": "110321563687320384668",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pollyfuckyou%40fir-adapterrecyclerview-1f230.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

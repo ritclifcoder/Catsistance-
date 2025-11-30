@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/action_notifications"
+        android:title="Notifications"
+        android:icon="@android:drawable/ic_popup_reminder"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_profile"
+        android:title="Profile"
+        android:icon="@drawable/catperson"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_chat"
+        android:title=" 🐱 Health Assistant"
+        android:icon="@android:drawable/ic_menu_send"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_cat_converter"
+        android:title=" 🐱Cat Voice"
+        android:icon="@android:drawable/ic_btn_speak_now"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_test_notification"
+        android:title="Test Notification"
+        android:icon="@android:drawable/ic_menu_info_details"
+        app:showAsAction="never" />
+    
+</menu>

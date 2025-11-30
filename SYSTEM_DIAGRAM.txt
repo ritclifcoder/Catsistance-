@@ -1,0 +1,239 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                    HEALTH RECOMMENDATION SYSTEM                           ║
+║                         Architecture Diagram                              ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                          USER INTERFACE FLOW                            │
+└─────────────────────────────────────────────────────────────────────────┘
+
+    DashboardActivity
+           │
+           ├─► Menu → Profile
+           │          │
+           │          ▼
+           │   ProfileActivity
+           │          │
+           │          ├─► Display: Total XP
+           │          ├─► Display: Recommendations Left (X/3)
+           │          │
+           │          ├─► [Recommend Health] Button
+           │          │          │
+           │          │          ▼
+           │          │   RecommendationOptionsActivity
+           │          │          │
+           │          │          ├─► [💧 Drink more water]
+           │          │          ├─► [🚶 Walk more]
+           │          │          ├─► [❤️ Lower blood pressure]
+           │          │          └─► [😌 Reduce stress]
+           │          │                    │
+           │          │                    ▼
+           │          │          ┌─────────────────────┐
+           │          │          │ Send to all group   │
+           │          │          │ members (except me) │
+           │          │          └─────────────────────┘
+           │          │                    │
+           │          │                    ▼
+           │          │          CongratulationsActivity
+           │          │                    │
+           │          │                    ├─► "You earned 10 XP!"
+           │          │                    └─► "You have X left"
+           │          │
+           │          └─► [View History] Button
+           │                     │
+           │                     ▼
+           │          RecommendationHistoryActivity
+           │                     │
+           │                     └─► List of sent recommendations
+           │
+           └─► Menu → Recommendation History
+                      │
+                      └─► RecommendationHistoryActivity
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        FIREBASE DATABASE STRUCTURE                      │
+└─────────────────────────────────────────────────────────────────────────┘
+
+    Firebase Realtime Database
+           │
+           ├─► users/
+           │     │
+           │     └─► {userId}/
+           │           ├─► username: "John Doe"
+           │           ├─► email: "john@example.com"
+           │           ├─► groupId: "group123"
+           │           ├─► totalPoints: 150          ◄─── XP POINTS
+           │           └─► recommendationsLeft: 2    ◄─── REMAINING (0-3)
+           │
+           ├─► groups/
+           │     │
+           │     └─► {groupId}/
+           │           ├─► name: "Health Warriors"
+           │           └─► members/
+           │                 ├─► {userId1}: true
+           │                 ├─► {userId2}: true
+           │                 └─► {userId3}: true
+           │
+           └─► recommendations/
+                 │
+                 └─► {recommendationId}/
+                       ├─► from: "userId1"          ◄─── SENDER
+                       ├─► to: "userId2"            ◄─── RECIPIENT
+                       ├─► message: "Drink water"   ◄─── HEALTH TIP
+                       └─► timestamp: 1234567890    ◄─── WHEN SENT
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                           DATA FLOW DIAGRAM                             │
+└─────────────────────────────────────────────────────────────────────────┘
+
+    User clicks "Recommend Health"
+           │
+           ▼
+    Check recommendationsLeft > 0?
+           │
+           ├─► NO  → Show "No recommendations left"
+           │
+           └─► YES → Show 4 options
+                     │
+                     ▼
+              User selects option
+                     │
+                     ▼
+              Get user's groupId
+                     │
+                     ▼
+              Get all group members
+                     │
+                     ▼
+         ┌───────────┴───────────┐
+         │                       │
+         ▼                       ▼
+    For each member        Create recommendation
+    (except sender)        in Firebase
+         │                       │
+         └───────────┬───────────┘
+                     │
+                     ▼
+         Update recommendationsLeft -= 1
+                     │
+                     ▼
+         Get current totalPoints
+                     │
+                     ▼
+         Update totalPoints += 10
+                     │
+                     ▼
+         Show CongratulationsActivity
+                     │
+                     ├─► Display XP earned (10)
+                     └─► Display recommendations left
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         COMPONENT RELATIONSHIPS                         │
+└─────────────────────────────────────────────────────────────────────────┘
+
+    ProfileActivity
+           │
+           ├─► Uses: FirebaseAuth (get current user)
+           ├─► Reads: users/{userId}/totalPoints
+           ├─► Reads: users/{userId}/recommendationsLeft
+           └─► Navigates to: RecommendationOptionsActivity
+
+    RecommendationOptionsActivity
+           │
+           ├─► Uses: FirebaseAuth (get current user)
+           ├─► Reads: users/{userId}/groupId
+           ├─► Reads: users/{userId}/recommendationsLeft
+           ├─► Reads: groups/{groupId}/members
+           ├─► Writes: recommendations/{recId}
+           ├─► Updates: users/{userId}/recommendationsLeft
+           ├─► Updates: users/{userId}/totalPoints
+           └─► Navigates to: CongratulationsActivity
+
+    CongratulationsActivity
+           │
+           ├─► Receives: xpEarned (Intent Extra)
+           ├─► Receives: recommendationsLeft (Intent Extra)
+           └─► Displays: Success message
+
+    RecommendationHistoryActivity
+           │
+           ├─► Uses: FirebaseAuth (get current user)
+           ├─► Reads: recommendations/ (where from = userId)
+           ├─► Reads: users/{toUserId}/username
+           └─► Displays: RecyclerView list
+
+    RecommendationManager (Utility)
+           │
+           ├─► initializeUserRecommendations()
+           │     ├─► Sets recommendationsLeft = 3
+           │     └─► Sets totalPoints = 0
+           │
+           └─► resetDailyRecommendations()
+                 └─► Sets recommendationsLeft = 3
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                            XP POINTS SYSTEM                             │
+└─────────────────────────────────────────────────────────────────────────┘
+
+    Action: Send Recommendation
+           │
+           ├─► XP Earned: 10 points
+           ├─► Stored in: users/{userId}/totalPoints
+           ├─► Displayed in: CongratulationsActivity
+           └─► Displayed in: ProfileActivity
+
+    Calculation:
+           newTotalPoints = currentTotalPoints + 10
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                       RECOMMENDATION LIMIT SYSTEM                       │
+└─────────────────────────────────────────────────────────────────────────┘
+
+    Initial State: recommendationsLeft = 3
+           │
+           ├─► Send 1st recommendation → recommendationsLeft = 2
+           │                              Message: "You have 2 left"
+           │
+           ├─► Send 2nd recommendation → recommendationsLeft = 1
+           │                              Message: "You have 1 left"
+           │
+           ├─► Send 3rd recommendation → recommendationsLeft = 0
+           │                              Message: "No recommendations left"
+           │
+           └─► Try to send 4th → BLOCKED
+                                 Message: "No recommendations left today!"
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                          FILES CREATED/MODIFIED                         │
+└─────────────────────────────────────────────────────────────────────────┘
+
+    NEW FILES:
+    ├─► ProfileActivity.java
+    ├─► RecommendationOptionsActivity.java
+    ├─► CongratulationsActivity.java
+    ├─► RecommendationHistoryActivity.java
+    ├─► RecommendationManager.java
+    ├─► TestDataSeeder.java
+    ├─► activity_profile.xml
+    ├─► activity_recommendation_options.xml
+    ├─► activity_congratulations.xml
+    ├─► activity_recommendation_history.xml
+    └─► item_recommendation.xml
+
+    MODIFIED FILES:
+    ├─► AndroidManifest.xml (added 4 activities)
+    ├─► drawer_menu.xml (added 2 menu items)
+    ├─► DashboardActivity.java (added navigation handlers)
+    └─► SignUpActivity.java (added initialization)
+
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                              END OF DIAGRAM                               ║
+╚═══════════════════════════════════════════════════════════════════════════╝

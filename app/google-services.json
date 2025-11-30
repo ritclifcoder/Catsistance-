@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "642490320019",
+    "firebase_url": "https://englishdic-80c3a.firebaseio.com",
+    "project_id": "englishdic-80c3a",
+    "storage_bucket": "englishdic-80c3a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642490320019:android:dd059d7bdfb15a7f",
+        "android_client_info": {
+          "package_name": "com.example.englishdic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaMZJ4AV_BAYKECsBrJ0eNA8VK1B3vK1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642490320019:android:628b9c368d501081327966",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaMZJ4AV_BAYKECsBrJ0eNA8VK1B3vK1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
