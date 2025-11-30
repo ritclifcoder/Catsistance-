@@ -87,7 +87,12 @@
   <tr>
     <td><img src="app/screenshots/bandicambandicam 2025-12-01 00-10-20-536.jpg" width="250"/></td>
   </tr>
+  <tr>
+    <td><img src="app/screenshots/bandicam 2025-12-01 00-25-30-590.jpg" width="250"/></td>
+    <td><img src="app/screenshots/bandicam 2025-12-01 00-25-30-160.jpg" width="250"/></td>
+  </tr>
 </table>
+
 
 
 
