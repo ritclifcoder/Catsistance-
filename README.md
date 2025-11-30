@@ -56,20 +56,7 @@
 - Custom audio processing
 
 ## 📱 Screenshots
-
-![Screenshot 1](app/screenshots/bandicam 2025-11-21 14-35-55-991.jpg)
-![Screenshot 2](app/screenshots/bandicam 2025-11-21 16-21-50-119.jpg)
-![Screenshot 3](app/screenshots/bandicam 2025-11-21 16-30-15-492.jpg)
-![Screenshot 4](app/screenshots/bandicam 2025-11-22 20-42-58-275.jpg)
-![Screenshot 5](app/screenshots/bandicam 2025-11-23 16-41-42-981.jpg)
-![Screenshot 6](app/screenshots/bandicam 2025-11-23 16-43-11-666.jpg)
-![Screenshot 7](app/screenshots/bandicam 2025-11-23 16-59-41-217.jpg)
-![Screenshot 8](app/screenshots/bandicam 2025-11-24 18-24-36-578.jpg)
-![Screenshot 9](app/screenshots/bandicam 2025-11-26 13-13-24-596.jpg)
-![Screenshot 10](app/screenshots/bandicam 2025-11-26 14-28-20-209.jpg)
-![Screenshot 11](app/screenshots/bandicam 2025-11-26 16-29-15-948.jpg)
-![Screenshot 12](app/screenshots/bandicam 2025-11-26 17-04-11-146.jpg)
-![Screenshot 13](app/screenshots/bandicam 2025-11-26 17-06-46-199.jpg)
+<table> <tr> <td><img src="app/screenshots/bandicam 2025-11-21 14-35-55-991.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-21 16-21-50-119.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-21 16-30-15-492.jpg" width="250"/></td> </tr> <tr> <td><img src="app/screenshots/bandicam 2025-11-22 20-42-58-275.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-23 16-41-42-981.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-23 16-43-11-666.jpg" width="250"/></td> </tr> <tr> <td><img src="app/screenshots/bandicam 2025-11-23 16-59-41-217.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-24 18-24-36-578.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-26 13-13-24-596.jpg" width="250"/></td> </tr> <tr> <td><img src="app/screenshots/bandicam 2025-11-26 14-28-20-209.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-26 16-29-15-948.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-26 17-04-11-146.jpg" width="250"/></td> </tr> <tr> <td><img src="app/screenshots/bandicam 2025-11-26 17-06-46-199.jpg" width="250"/></td> </tr> </table>
 
 
 ## 🎯 Innovation Factor
