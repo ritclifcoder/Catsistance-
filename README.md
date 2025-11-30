@@ -56,8 +56,8 @@
 - Custom audio processing
 
 ## 📱 Screenshots
+<table> <tr> <td><img src="app/screenshots/bandicam 2025-11-21 14-35-55-991.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-21 16-21-50-119.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-21 16-30-15-492.jpg" width="250"/></td> </tr> <tr> <td><img src="app/screenshots/bandicam 2025-11-22 20-42-58-275.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-23 16-41-42-981.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-23 16-43-11-666.jpg" width="250"/></td> </tr> <tr> <td><img src="app/screenshots/bandicam 2025-11-23 16-59-41-217.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-24 18-24-36-578.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-26 13-13-24-596.jpg" width="250"/></td> </tr> <tr> <td><img src="app/screenshots/bandicam 2025-11-26 14-28-20-209.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-26 16-29-15-948.jpg" width="250"/></td> <td><img src="app/screenshots/bandicam 2025-11-26 17-04-11-146.jpg" width="250"/></td> </tr> <tr> <td><img src="app/screenshots/bandicam 2025-11-26 17-06-46-199.jpg" width="250"/></td> </tr> </table>
 
-[Dashboard with health stats and leaderboard visible in your screenshots]
 
 ## 🎯 Innovation Factor
 
